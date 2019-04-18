@@ -13,7 +13,6 @@ import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity() {
 
-
     private var errorCount = 0
     private val invalidCount = 5
     private var snackbarSeen = false

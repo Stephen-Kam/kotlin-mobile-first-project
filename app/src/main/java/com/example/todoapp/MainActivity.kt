@@ -9,7 +9,6 @@ import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.fragment_photo.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -64,7 +63,6 @@ class MainActivity : AppCompatActivity() {
         val username = prefRepo.getUsername() ?: throw Error("User is not logged it")
 
         toast("$username is logged in", true)
-
     }
 
     fun show(fragment: Fragment) {
@@ -74,7 +72,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     companion object {
-
         fun start(activity: Activity, message: String, user: User) {
             val intent = Intent(activity, MainActivity::class.java)
             activity.startActivity(intent)
