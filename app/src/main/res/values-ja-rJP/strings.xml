@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">TodoApp</string>
+
+    <!--Menu Items-->
+    <string name="menu_bug">バグを報告する</string>
+    <string name="menu_message">ここにメッセージを送ってください</string>
+    <string name="menu_camera">ぼやけた写真を撮る</string>
+
+    <!--Toast Messages-->
+    <string name="toast_enterDetails">ユーザー名とパスワードを入力してください</string>
+
+    <!--Snackbar Messages-->
+    <string name="snack_main">これはスナックバーです</string>
+    <string name="snack_main_action">はい</string>
+
+    <!--Main template Messages-->
+    <string name="main_attempts_failed">失敗した試行回数: %1$d</string>
+
+
+    <!--Layout-->
+    <!--Hints-->
+    <string name="layout_main_username_hint">ユーザー名</string>
+    <string name="layout_main_password_hint">パスワード</string>
+    <!--Buttons-->
+    <string name="layout_main_btn_submit">提出する</string>
+    <string name="layout_main_btn_forgot">ユーザー名/パスワードをお忘れですか</string>
+
+
+    <string name="error_emptyFields">Fields cannot be empty</string>
+    <string name="error_invalidDetails">Invalid details, try again</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello Photo fragment</string>
+
+
+
+</resources>

@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">TodoApp</string>
+
+    <!--Menu Items-->
+    <string name="menu_bug">Submit a bug</string>
+    <string name="menu_message">Send your message here</string>
+    <string name="menu_camera">Take a blurry picture</string>
+
+    <!--Toast Messages-->
+    <string name="toast_enterDetails">Please enter in your username and password</string>
+
+    <!--Snackbar Messages-->
+    <string name="snack_main">Application was updated to version 0.1</string>
+    <string name="snack_main_action">OK</string>
+
+    <!--Main template Messages-->
+    <string name="main_attempts_failed">Invalid Details. Number of attempts failed: %1$d</string>
+
+    <!--Layout-->
+    <!--Hints-->
+    <string name="layout_main_username_hint">Username</string>
+    <string name="layout_main_password_hint">Numerical Password</string>
+    <!--Buttons-->
+    <string name="layout_main_btn_submit">Submit</string>
+    <string name="layout_main_btn_forgot">Forgotten Username/Password?</string>
+    <string name="error_emptyFields">Fields cannot be empty</string>
+    <string name="error_invalidDetails">Invalid details, try again</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Photo</string>
+    <string name="title_dashboard">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello Photo fragment</string>
+    <string name="contact">Contact</string>
+
+</resources>
