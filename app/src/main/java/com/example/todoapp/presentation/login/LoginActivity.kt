@@ -32,7 +32,7 @@ class LoginActivity : AppCompatActivity(), LoginView {
     }
 
     override fun showErrorMessage(message: String) {
-        txt_Error.text = message
+        txt_Error.text = "There was an error: \n\n$message"
     }
 
     override fun hideSubmitButton() {
