@@ -1,4 +1,4 @@
-package com.example.todoapp
+package com.example.todoapp.presentation.fragments.photo
 
 import android.app.Activity
 import android.content.Intent
@@ -9,6 +9,7 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.todoapp.R
 import kotlinx.android.synthetic.main.fragment_photo.*
 
 class PhotoFragment : Fragment() {
@@ -20,7 +21,9 @@ class PhotoFragment : Fragment() {
         fragment_photo_takePicture.setOnClickListener {
             val takePictureIntent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
             if (takePictureIntent.resolveActivity(activity!!.packageManager) != null) {
-                startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE)
+                startActivityForResult(takePictureIntent,
+                    REQUEST_IMAGE_CAPTURE
+                )
             }
         }
     }
