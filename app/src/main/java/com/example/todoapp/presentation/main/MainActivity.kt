@@ -1,4 +1,4 @@
-package com.example.todoapp
+package com.example.todoapp.presentation.main
 
 import android.app.Activity
 import android.content.Intent
@@ -8,11 +8,20 @@ import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
+import com.example.todoapp.R
+import com.example.todoapp.data.StorageRepoImpl
+import com.example.todoapp.models.User
+import com.example.todoapp.presentation.fragments.contact.ContactFragment
+import com.example.todoapp.presentation.fragments.photo.PhotoFragment
+import com.example.todoapp.presentation.fragments.settings.SettingsFragment
+import com.example.todoapp.presentation.login.LoginActivity
+import com.example.todoapp.utils.toast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
-    private val prefRepo = PrefRepo(this)
+    private val prefRepo = StorageRepoImpl(this)
+
 
     private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
         when (item.itemId) {

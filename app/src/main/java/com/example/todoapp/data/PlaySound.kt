@@ -1,17 +1,14 @@
-package com.example.todoapp
+package com.example.todoapp.data
 
 import android.content.Context
 import android.os.Build
 import android.speech.tts.TextToSpeech
 
-class PlaySound : Speaker {
+class PlaySound(val context: Context): Speaker {
 
-    /**
-     * Initialise the TextToSpeech variable at a later time
-     */
     lateinit var tts: TextToSpeech
 
-    fun init(context: Context) {
+    override fun init() {
         tts = TextToSpeech(context, null)
     }
 
@@ -23,11 +20,13 @@ class PlaySound : Speaker {
         }
     }
 
-    fun onDestroy() {
+    override fun onDestroy() {
         tts.shutdown()
     }
 }
 
 interface Speaker {
+    fun init()
     fun speak(text: String)
+    fun onDestroy()
 }
